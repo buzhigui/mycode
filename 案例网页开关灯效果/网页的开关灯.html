@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<style type="text/css">
+		.cls{
+			background-color: black;
+		}
+	</style>
+</head>
+<body>
+	<input type="button" value="开关" id="btn" name="">
+	<script type="text/javascript">
+		// DOM方法完成网页开关灯
+		// document.getElementById("btn").onclick = function(){
+		// 	// 判断
+		// 	var body = document.body;
+		// 	if (body.className == "cls") {
+		// 		body.className = "";
+		// 		this.value = "关灯";
+		// 	}else{
+		// 		body.className = "cls";
+		// 		this.value = "开灯";
+		// 	}
+		// };
+		
+		// $("#btn").click(function(){
+		// 	if($("body")[0].className == "cls"){
+		// 		$("body")[0].className = "";
+		// 	}else{
+		// 		$("body")[0].className == "cls";
+		// 	}
+		// });
+		
+		$("#btn").click(function(){
+			// 判断body是否应用了cls样式
+			if ($("body").hasClass("cls")) {
+				//应用了样式,则移除这个样式
+				$("body").removeClass("cls");
+			}else{
+				// 没有应用,则添加这个样式
+				$("body").addClass("cls");
+			}
+		});
+	</script>
+</body>
+</html>

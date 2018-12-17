@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style type="text/css">
+		div{
+			width: 200px;
+			height: 125px;
+			margin: 2px;
+			float: left;
+		}
+		img{
+			width: 200px;
+			height: 125px;
+		}
+	</style>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$("img").click(function(){
+				$(this).parent().hide(1000);
+			});
+		});
+	</script>
+</head>
+<body>
+	<div><img src="imgs/1-small.jpg" /></div>
+	<div><img src="imgs/2-small.jpg" /></div>
+	<div><img src="imgs/3-small.jpg" /></div>
+	<div><img src="imgs/4-small.jpg" /></div>
+</body>
+</html>

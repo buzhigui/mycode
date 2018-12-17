@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<style type="text/css">
+		.cls{
+			background-color: black;
+		}
+	</style>
+	<script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			// 第一种方式
+			//点击按钮,实现开关灯
+			// $("#btn").click(function(){
+			// 	// 判断body是否应用了cls样式
+			// 	if($("body").hasClass("cls")){
+			// 		// 应用了,移除cls样式
+			// 		$("body").removeClass("cls");
+			// 		$("#btn").val("关灯");
+			// 	}else{
+			// 		// 没有应用,添加cls样式
+			// 		$("body").addClass("cls");
+			// 		$("#btn").val("开灯");
+			// 	}
+			// });
+			
+			// 第二种方式
+			$("#btn").click(function(){
+				// toggleClass();切换类样式
+				// 有就自动移除,没有则添加
+				$("body").toggleClass("cls");
+			});
+		});
+	</script>
+</head>
+<body>
+	<input type="button" value="开/关灯" id="btn" name="">
+</body>
+</html>

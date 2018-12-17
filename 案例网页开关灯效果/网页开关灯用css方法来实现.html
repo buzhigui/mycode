@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<input type="button" value="开关" id="btn" name="">
+	<script type="text/javascript" src="jquery-1.12.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$("#btn").click(function(){
+			// 判断这个按钮的值来修改body的样式
+			// 此处的this是当前的按钮DOM对象
+			// 判断按钮的value值是否是关灯
+			if($(this).val()=="关灯"){
+				// 修改body的背景颜色
+				$("body").css("backgroundColor","black");
+				$(this).val("开灯");
+			}else{
+				$("body").css("backgroundColor","");
+				$(this).val("关灯");
+			}
+		});
+
+		// 表单标签DOM对象中设置和获取value的值--->对象.value
+		// jQuery中:
+		// jQuery对象.val();---->表示的是获取该元素的value属性值
+		// jQuery对象.val("值");---->表示的是设置该元素的value属性值
+		// jQuery对象.css("css的属性名","属性的值");---->设置元素的样式属性值
+	</script>
+</body>
+</html>
