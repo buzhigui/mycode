@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+
+	<!--
+	title标签是搜索引擎了解网页的入口
+	标题的长度:
+		Google(70kb),35个中文
+		Baidu(56kb),28个中文
+	关键字分布:
+		最先出现的词语权重最高
+	关键字词频
+		主关键字出现3次
+		辅关键字出现1次
+
+	建议:
+		首页标题:网站名(产品名)-网站的介绍
+	例如:京东(JD.COM)-综合网购首选-正品低价,品质保障,配送及时,轻松购物!
+	 -->
+	<title>京东(JD.COM)-综合网购首选-正品低价,品质保障,配送及时,轻松购物!</title>
+	<!-- description 不超过120个字 -->
+	<meta name="description" content="京东JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务，为您提供愉悦的网上购物体验!" />
+	<!-- keyword 6-8个词 -->
+	<meta name="Keywords" content="网上购物,网上商城,手机,笔记本,电脑,MP3,CD,VCD,DV,相机,数码,配件,手表,存储卡,京东" />
+	<!-- 引入网站icon图标 -->
+	<link rel="icon" type="images/x-icon" href="favicon.ico">
+	<!-- 引入css初始化文件 -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- 头部和底部结构基本相同,公共样式 -->
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<!-- 专属的首页样式 -->
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<!-- S header部分 -->
+	<header>
+		<div class="w">
+			<a href="#">
+				<img src="images/header.jpg">
+			</a>
+		</div>
+	</header>
+	<!-- E header部分 -->
+
+	<!-- S 快速导航栏 -->
+	<div class="shortcut">
+		<div class="w">
+			<ul class="fl city">
+				<li><i class="f10"></i>北京</li>
+			</ul>
+			<ul class="fr">
+				<li>
+					<a href="#">你好，请登录</a>
+					<a href="#" class="f10">免费注册</a>
+				</li>
+				<li class="space"></li>
+				<li>
+					<a href="#">我的订单</a>
+				</li>
+				<li class="space"></li>
+				<li>
+					<a href="#">我的京东</a>
+					<i></i>
+				</li>
+				<li class="space"></li>
+				<li>
+					<a href="#">京东会员</a>
+				</li>
+				<li class="space"></li>
+				<li>
+					<a href="#">企业采购</a>
+					<i></i>
+				</li>
+				<li class="space"></li>
+				<li>
+					<a href="#">客户服务</a>
+					<i></i>
+				</li>
+				<li class="space"></li>
+				<li>
+					<a href="#">网站导航</a>
+					<i></i>
+				</li>
+				<li class="space"></li>
+				<li class="mobil">
+					<a href="#" >手机京东</a>
+					<img src="images/mobil.png" width="60" height="60" alt="" />
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- E 快速导航栏 -->
+
+	<!-- S 中间头部分 -->
+	<div class="w middle">
+		<div class="logo">
+			<h1>
+			<!-- 提高权重,便利于搜索引擎优化 -->
+				<a href="#"></a>
+			</h1>
+		</div>
+		<!-- 搜索框 -->
+		<div class="form">
+			<input type="text" name="" placeholder="京东大牌,惊爆双11">
+			<button><i></i></button>
+		</div>
+		<!-- 购物车 -->
+		<div class="shopCar">
+			<i></i>
+			<a href="#" class="f10">我的购物车</a>
+			<span>0</span>
+		</div>
+		<!-- 关键词 -->
+			<div class="hotwords">
+			<a href="#" class="f10">大牌闪购日</a>
+			<a href="#">母婴神券</a>
+			<a href="#">水饮</a>
+			<a href="#">手机爆款</a>
+			<a href="#">满减优惠</a>
+			<a href="#">5折家电</a>
+			<a href="#">199减100</a>
+			<a href="#">游戏手机</a>
+			<a href="#">黑鲨Helo</a>
+		</div>
+		<!-- 小导航部分 -->
+		<div class="navitems">
+			<ul>
+				<li><a href="#">秒杀</a></li>
+				<li><a href="#">优惠券</a></li>
+				<li><a href="#">PLUS会员</a></li>
+				<li><a href="#">闪购</a></li>
+				<li class="space"></li>
+				<li><a href="#">拍卖</a></li>
+				<li><a href="#">京东时尚</a></li>
+				<li><a href="#">京东超市</a></li>
+				<li><a href="#">京东生鲜</a></li>
+				<li class="space"></li>
+				<li><a href="#">全球购</a></li>
+				<li><a href="#">京东金融</a></li>
+			</ul>
+		</div>
+		<!-- 超级日部分 -->
+		<div class="superday">
+			<a href="#"><img src="images/superday.png" width="190" height="40"></a>
+		</div>
+	</div>
+	<!-- E 中间头部分 -->
+
+	<!-- S 中间分类区域 -->
+	
+	<div class="grid" style="z-index: 9;">
+		<div class="w grid1" style="z-index: 1;">
+			<div class="grid-col1 fl">
+			<ul>
+				<li><a href="#">家用电器</a></li>
+				<li><a href="#">手机</a>/<a href="#">运营商</a>/<a href="#">数码</a></li>
+				<li><a href="#">电脑</a>/<a href="#">办公</a></li>
+				<li><a href="#">家居</a>/<a href="#">家具</a>/<a href="#">家装</a>/<a href="#">厨具</a></li>
+				<li><a href="#">男装</a>/<a href="#">女装</a>/<a href="#">童装</a>/<a href="#">内衣</a></li>
+				<li><a href="#">美妆</a>/<a href="#">个护清洁</a>/<a href="#">宠物</a></li>
+				<li><a href="#">女鞋</a>/<a href="#">箱包</a>/<a href="#">钟表</a>/<a href="#">珠宝</a></li>
+				<li><a href="#">男鞋</a>/<a href="#">运动</a>/<a href="#">户外</a></li>
+				<li><a href="#">房产</a>/<a href="#">汽车</a>/<a href="#">汽车用品</a></li>
+				<li><a href="#">母婴</a>/<a href="#">玩具乐器</a></li>
+				<li><a href="#">食品</a>/<a href="#">酒类</a>/<a href="#">生鲜</a>/<a href="#">特产</a></li>
+				<li><a href="#">艺术</a>/<a href="#">礼品鲜花</a>/<a href="#">农资绿植</a></li>
+				<li><a href="#">医药保健</a>/<a href="#">计生情趣</a></li>
+				<li><a href="#">图书</a>/<a href="#">文娱</a>/<a href="#">电子书</a></li>
+				<li><a href="#">机票</a>/<a href="#">酒店</a>/<a href="#">旅游</a>/<a href="#">生活</a></li>
+				<li><a href="#">理财</a>/<a href="#">众筹</a>/<a href="#">白条</a>/<a href="#">保险</a></li>
+				<li><a href="#">安装</a>/<a href="#">维修</a>/<a href="#">清洗保养</a></li>
+				<li><a href="#">工业品</a></li>
+			</ul>
+			</div>
+			<div class="w grid-col2 fl">
+			<a href="#"><img src="images/grid-col2-left.jpg"></a>
+			<a href="#" class="arrow-l"><</a>
+			<a href="#" class="arrow-r">></a>
+			<ul class="circle">
+				<li></li>
+				<li></li>
+				<li class="current"></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			</div>
+			<div class="grid-col3 fl">
+			<div class="grid-col3-top">
+				<a href="#"><img src="images/grid-col3-top.jpg" width="190" height="150"></a>
+			</div>
+			<div class="grid-col3-middle">
+				<a href="#"><img src="images/grid-col3-middle.jpg" width="190" height="150"></a>
+			</div>
+			<div class="grid-col3-right">
+				<a href="#"><img src="images/grid-col3-bottom.jpg" width="190" height="150"></a>
+			</div>
+			</div>
+			<div class="grid-col4 fr">
+				<!-- 登录模块 -->
+				<div class="login">
+					<div class="login-top">
+						<div class="user-avatar">
+							<a href="#"><img src="images/no_login.jpg" width="55" height="55"></a>
+						</div>
+						<div class="user_show">
+							<p>Hi~欢迎来到京东！</p>
+							<p>
+								<a href="#">登录</a>
+								<a href="#">注册</a>
+							</p>
+						</div>
+						<div class="fuli">
+							<a href="#" class="new">新人福利</a>
+							<a href="#" class="plus">PLUS会员</a>
+						</div>
+					</div>
+					<div class="login-middle">
+					</div>
+					<div class="login-bottom"></div>
+				</div>
+				<!-- 新闻模块 -->
+				<div class="news">
+					<div class="news-head">
+						<a href="#" class="cx">促销</a>
+						<a href="#" class="gg">公告</a>
+						<a href="#" class="more">更多</a>
+						<div></div>
+					</div>
+					<div class="news-content">
+						<ul>
+							<li><a href="#">家电2件8.8折继续抢</a></li>
+							<li><a href="#">工业品领券99减50</a></li>
+							<li><a href="#">电脑数码 享白条免息</a></li>
+							<li><a href="#">英特尔 傲腾主机低至2799元</a></li>
+						</ul>
+					</div>
+				</div>
+				<!-- 服务拓展模块 -->
+				<div class="expand">
+					<ul>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="ad">
+			<a href="#"></a>
+		</div> -->
+	</div>
+	<!-- E 中间分类区域 -->
+
+	<!-- S 页面底部 -->
+	<footer>
+		<!-- 服务模块 -->
+		<div class="servics clearfix">
+			<div class="w">
+				<ul>
+				<li>
+					<h5></h5>
+					<p>品类齐全，轻松购物</p>
+				</li>
+				<li>
+					<h5></h5>
+					<p>多仓直发，极速配送</p>
+				</li>
+				<li>
+					<h5></h5>
+					<p>正品行货，精致服务</p>
+				</li>
+				<li>
+					<h5></h5>
+					<p>天天低价，畅选无忧</p>
+				</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 帮助模块 -->
+		<div class="help">
+			<div class="fl">
+				<dl>
+					<dt>购物指南</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">会员介绍</a></dd>
+					<dd><a href="#">生活旅行</a></dd>
+					<dd><a href="#">常见问题</a></dd>
+					<dd><a href="#">大家电</a></dd>
+					<dd><a href="#">联系客服</a></dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">会员介绍</a></dd>
+					<dd><a href="#">生活旅行</a></dd>
+					<dd><a href="#">常见问题</a></dd>
+					<dd><a href="#">大家电</a></dd>
+					<dd><a href="#">联系客服</a></dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">会员介绍</a></dd>
+					<dd><a href="#">生活旅行</a></dd>
+					<dd><a href="#">常见问题</a></dd>
+					<dd><a href="#">大家电</a></dd>
+					<dd><a href="#">联系客服</a></dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">会员介绍</a></dd>
+					<dd><a href="#">生活旅行</a></dd>
+					<dd><a href="#">常见问题</a></dd>
+					<dd><a href="#">大家电</a></dd>
+					<dd><a href="#">联系客服</a></dd>
+				</dl>
+				<dl>
+					<dt>购物指南</dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">会员介绍</a></dd>
+					<dd><a href="#">生活旅行</a></dd>
+					<dd><a href="#">常见问题</a></dd>
+					<dd><a href="#">大家电</a></dd>
+					<dd><a href="#">联系客服</a></dd>
+				</dl>
+			</div>
+			<div class="fr coverage">
+				<h5>京东自营覆盖区县</h5>
+				<p>京东已向全国2661个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+				<a href="#">查看详情></a>
+			</div>
+		</div>
+		<!-- 版权模块 -->
+		<div class="w copyright">
+			<p>
+				<a href="#">关于我们</a>
+				<span>|</span>
+				<a href="#">联系我们</a>
+				<span>|</span>
+				<a href="#">联系客服</a>
+				<span>|</span>
+				<a href="#">合作招商</a>
+				<span>|</span>
+				<a href="#">商家帮助</a>
+				<span>|</span>
+				<a href="#">营销中心</a>
+				<span>|</span>
+				<a href="#">手机京东</a>
+				<span>|</span>
+				<a href="#">友情链接</a>
+				<span>|</span>
+				<a href="#">销售联盟</a>
+				<span>|</span>
+				<a href="#">京东社区</a>
+				<span>|</span>
+				<a href="#">风险监测</a>
+				<span>|</span>
+				<a href="#">隐私政策</a>
+				<span>|</span>
+				<a href="#">京东公益</a>
+				<span>|</span>
+				<a href="#">English Site</a>
+				<span>|</span>
+				<a href="#">Media & IR</a>
+			</p>
+		</div>
+	</footer>
+	<!-- E 页面底部 -->
+</body>
+</html>

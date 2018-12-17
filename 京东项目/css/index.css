@@ -1,0 +1,258 @@
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul{
+	margin: 0;
+	padding: 0;
+}
+/*中间分类*/
+.grid{
+	position: relative;
+}
+.grid1{
+	height: 470px;
+}
+/*左右两侧广告*/
+.grid .ad{
+	/*height: 780px;*/
+	width: 100%;
+	/*background-color: pink;*/
+	position: relative;
+}
+.grid .ad a{
+	display: block;
+	width: 100%;
+	background: url(../images/5beabfa3N033b0722.png) no-repeat center top;
+	height: 770px;
+	margin-top: 10px;
+	position: absolute;
+	
+	
+}
+/*左侧分类*/
+.grid-col1{
+	width: 190px;
+	margin-top: -9px;
+	background-color: #fefefe;
+	color: #626262;
+	/*给/一个大小颜色*/
+	font-size: 16px;
+}
+
+.grid-col1 ul{
+	padding: 6px 0;
+	height: 468px;
+}
+.grid-col1 ul li{
+	padding-left: 18px;
+	height: 26px;
+	line-height: 26px; 
+}
+.grid-col1 ul li:hover{
+	background-color: #9c9698;
+}
+.grid-col1 a{
+	color: #626262;
+	font-size: 14px;
+	/*margin: 0 3px;*/
+}
+.grid-col1 a:hover{
+	color: #f10215;
+}
+/*banner*/
+.grid-col2{
+	width: 590px;
+	height: 100%;
+	background-color: red;
+	margin-left: 10px;
+	position: relative;
+}
+.grid-col2 img{
+	width: 590px;
+	height: 470px;
+}
+.grid-col3{
+	width: 190px;
+	height: 100%;
+	/*background-color: yellow;*/
+	margin-left: 10px;
+}
+/*大图*/
+.grid-col3 img{
+	/*解决图片底部有空白*/
+	vertical-align: middle;
+}
+.grid-col3 div{
+	margin-bottom: 10px;
+}
+
+/*箭头*/
+.grid-col2 .arrow-l,
+.grid-col2 .arrow-r{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 30px;
+	height: 60px;
+	background: rgba(0, 0, 0, 0.3);
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	color: #fff;
+	font-family: arial;
+}
+.arrow-r{
+	right: 0;
+}
+.grid-col2 .circle{
+	width: 167px;
+	height: 20px;
+	background: rgba(255, 255, 255, 0.3);
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	border-radius: 10px;
+	padding-left: 8px;
+}
+.circle li{
+	width: 12px;
+	height: 12px;
+	background-color: #fff;
+	border-radius: 50%;
+	float: left;
+	margin: 4px;
+	/*鼠标经过lide时候变成小手*/
+	cursor: pointer;
+}
+.circle .current{
+	background-color: #f10215;
+}
+/*右边模块*/
+.grid-col4{
+	width: 190px;
+	height: 100%;
+	/*background-color: blue;*/
+}
+.login{
+	height: 150px;
+	background-color: #fff;
+}
+.login-top{
+	position: relative;
+	padding-top: 62px;
+    height: 78px;
+    text-align: center;
+}
+.user-avatar{
+	position: absolute;
+    left: 50%;
+    top: -10px;
+    margin-left: -34px;
+    width: 65px;
+    height: 65px;
+}
+.user-avatar a{
+	display: block;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	border: 5px solid #e3e1df;
+	border-radius: 50%;
+	box-shadow: 3px 6px 25px #c3c3c3;
+	overflow: hidden;
+}
+.user-avatar img{
+	display: block;
+	width: 55px;
+	height: 55px;
+}
+.user_show p{
+	text-align: center;
+	color: #888;
+	font-size: 12px;
+	line-height: 20px;
+}
+.fuli{
+	height: 25px;
+	margin-top: 10px;
+}
+.fuli a{
+	display: inline-block;
+	width: 70px;
+	height: 25px;
+	margin: 0 5px;
+	line-height: 25px;
+	text-align: center;
+	font-size: 12px;
+	/*border: 1px solid #e3e1df;*/
+	border-radius: 13px;
+	box-shadow: 3px 6px 25px #c3c3c3;
+}
+.fuli a:hover{
+	background-color: #e33333;
+	color: #fff;
+}
+.fuli .new{
+	color: #f10215;
+}
+.fuli .plus{
+	background-color: #363634;
+	color: #e5d790;
+}
+.news{
+	height: 127px;
+	border-bottom: 2px solid #ebeaea;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+.news-head{
+	padding-top: 8px;
+    border-right: 1px solid #dfe0e1;
+	line-height: 13px;
+	position: relative;
+}
+.news-head a{
+	font-size: 12px;
+	color: #333;
+	padding-right: 15px;
+    padding-left: 15px;
+}
+.cx{
+    border-right: 1px solid #dfe0e1;
+}
+.more{
+	position: absolute;
+    right: -1px;
+    top: 8px;
+}
+.news-head div{
+	width: 28px;
+	height: 2px;
+	background-color: #f10215;
+	position: absolute;
+	bottom: -5px;
+	left: 13px;
+}
+.news-content ul{
+	padding-top: 20px;
+	padding-left: 15px;
+}
+.news-content li{
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color: #999;
+}
+.expand{
+	height: 190px;
+	background-color: #fff;
+}
+.expand ul{
+	text-align: center;
+
+}
+.expand li{
+	width: 42px;
+	height: 57px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+}
